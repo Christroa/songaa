@@ -145,12 +145,12 @@ section.stores .title, section.popular .title {
   gap: 15px;
   margin-bottom: 20px;
 }
-section.stores .title .nav a, section.popular .title .nav a {
+section.stores .title .navi a, section.popular .title .navi a {
   text-decoration: none;
   font-size: 1.5rem;
   position: relative;
 }
-section.stores .title .nav a:hover::after, section.popular .title .nav a:hover::after {
+section.stores .title .navi a:hover::after, section.popular .title .navi a:hover::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -159,7 +159,7 @@ section.stores .title .nav a:hover::after, section.popular .title .nav a:hover::
   left: 0;
   background: coral;
 }
-section.stores .title .nav :first-child:after, section.popular .title .nav :first-child:after {
+section.stores .title .navi :first-child:after, section.popular .title .navi :first-child:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -168,7 +168,7 @@ section.stores .title .nav :first-child:after, section.popular .title .nav :firs
   left: 0;
   background: coral;
 }
-section.stores .title .nav :last-child, section.popular .title .nav :last-child {
+section.stores .title .navi :last-child, section.popular .title .navi :last-child {
   margin-left: 15px;
 }
 
@@ -178,12 +178,21 @@ section.stores .title .nav :last-child, section.popular .title .nav :last-child 
   }
 }
 @media screen and (max-width: 580px) {
-  .flash .title h2 {
+  .flash .title > h2 {
     font-size: 1.1rem;
     font-weight: 600;
   }
-  .flash .title .countDown i {
+  .countDown i {
     font-size: 0.8rem;
+  }
+  .stores .title,
+.popular .title {
+    flex-wrap: wrap;
+  }
+  .stores .title .navi a,
+.popular .title .navi a {
+    font-size: 1.1rem !important;
+    font-weight: 600;
   }
 }
 @media screen and (max-width: 425px) {

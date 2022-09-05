@@ -153,7 +153,7 @@ section {
       justify-content: space-between;
       gap: 15px;
       margin-bottom: 20px;
-      .nav {
+      .navi {
         a {
           text-decoration: none;
           font-size: 1.5rem;
@@ -193,14 +193,22 @@ section {
 }
 @media screen and (max-width: 580px) {
   .flash .title {
-    h2 {
+    > h2 {
       font-size: 1.1rem;
       font-weight: 600;
     }
-    .countDown {
-      i {
-        font-size: 0.8rem;
-      }
+  }
+  .countDown {
+    i {
+      font-size: 0.8rem;
+    }
+  }
+  .stores .title,
+  .popular .title {
+    flex-wrap: wrap;
+    .navi a {
+      font-size: 1.1rem !important;
+      font-weight: 600;
     }
   }
 }
