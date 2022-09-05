@@ -80,10 +80,14 @@ ol {
   margin: 0;
   list-style-type: none;
 }
+main {
+  //   margin: 0 50px;
+}
 //////////////////////////////////////////////////////////////////////
 
 section {
   &.hero {
+    margin: 0 100px !important;
     .category {
       padding: 0;
       border-radius: 15px;
@@ -121,6 +125,21 @@ section {
         }
       }
     }
+    .mainSlide .item img {
+      border-radius: 15px;
+    }
+    .heroImg {
+      padding: 15px;
+      background: linear-gradient(99.56deg, #f39200 -4.69%, #96146a 110.68%);
+      border-radius: 15px;
+      .card {
+        // height: 200px;
+        img {
+          //   height: 80px;
+          //   width: 80px;
+        }
+      }
+    }
   }
 
   &.flash {
@@ -133,7 +152,11 @@ section {
       .countDown {
         gap: 5px;
         i {
-          background: #000;
+          background: linear-gradient(
+            152.3deg,
+            #000000 -37.49%,
+            #96146a 88.51%
+          );
           padding: 5px;
           color: #fff;
           border-radius: 5px;
