@@ -207,8 +207,11 @@ section {
   .popular .title {
     flex-wrap: wrap;
     .navi a {
-      font-size: 1.1rem !important;
+      font-size: 0.7rem !important;
       font-weight: 600;
+    }
+    > a {
+      color: coral;
     }
   }
 }

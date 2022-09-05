@@ -191,8 +191,12 @@ section.stores .title .navi :last-child, section.popular .title .navi :last-chil
   }
   .stores .title .navi a,
 .popular .title .navi a {
-    font-size: 1.1rem !important;
+    font-size: 0.7rem !important;
     font-weight: 600;
+  }
+  .stores .title > a,
+.popular .title > a {
+    color: coral;
   }
 }
 @media screen and (max-width: 425px) {
