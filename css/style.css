@@ -83,9 +83,6 @@ ol {
   list-style-type: none;
 }
 
-section.hero {
-  margin: 0 100px !important;
-}
 section.hero .category {
   padding: 0;
   border-radius: 15px;
